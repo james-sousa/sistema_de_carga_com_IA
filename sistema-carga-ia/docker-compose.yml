@@ -1,0 +1,23 @@
+services:
+  rabbitmq:
+    image: "rabbitmq:3.9-management"
+    container_name: rabbitmq_sd
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - minha-rede
+
+  gerador:
+    build:
+      context: .
+      dockerfile: Gerador.Dockerfile
+    container_name: gerador_sd
+    depends_on:
+      - rabbitmq
+    networks:
+      - minha-rede
+
+networks:
+  minha-rede:
+    driver: bridge
