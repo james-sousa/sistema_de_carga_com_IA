@@ -98,8 +98,9 @@ sistema-carga-ia/
 - **Maven**  
 - **RabbitMQ**  
 - **Smile (IA e Machine Learning)**  
-- **Docker & Docker Compose**  
-
+- **Docker & Docker Compose**
+## Video de apresentação
+ - [https://www.youtube.com/watch?v=c8E3rHRgDUY]
 ## 👥 Autores
 - James Sousa  
 - David Natan
